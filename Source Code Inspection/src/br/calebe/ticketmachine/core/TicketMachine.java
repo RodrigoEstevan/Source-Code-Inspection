@@ -12,7 +12,7 @@ public class TicketMachine {
 
     protected int valor;
     protected int saldo;
-    protected int quantia;
+    protected int quantia; /*Commit 1*/
     protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
 
     public TicketMachine(int valor) {
@@ -46,7 +46,7 @@ public class TicketMachine {
             throw new SaldoInsuficienteException();
         }
         String result = "*****************\n";
-        result += "*** R$ " + saldo + ",00 ****\n";
+        result += "*** R$ " + valor + ",00 ****\n"; /*Commit 2*/
         result += "*****************\n";
         return result;
     }
